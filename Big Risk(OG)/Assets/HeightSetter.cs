@@ -30,7 +30,7 @@ public class HeightSetter : MonoBehaviour
                 heights[i, j] = pixHeight;
 
 
-                if ((i > hmHeight/2 || pixHeight < waterLevel) && (j < hmHeight - 1 && i < hmWidth - 1))
+                if ((i > hmHeight/2 || pixHeight <= waterLevel) && (j < hmHeight - 1 && i < hmWidth - 1))
                 {
                     holes[i, j] = false;
                 } else if((j < hmHeight - 1 && i < hmWidth - 1))
