@@ -16,7 +16,7 @@ public class HeightSetter : MonoBehaviour
         hmHeight = terr.terrainData.heightmapResolution;
         Terrain.activeTerrain.heightmapMaximumLOD = 0;
 
-        terr.terrainData.size = new Vector3(heightMap.width, maxHeight, heightMap.height);
+        terr.terrainData.size = new Vector3(heightMap.height, maxHeight, heightMap.height);
 
         // get the heights of the terrain under this game object
         float[,] heights = terr.terrainData.GetHeights(0, 0, hmWidth, hmHeight);
